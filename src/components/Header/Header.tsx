@@ -1,5 +1,9 @@
 import clsx from "clsx";
 
+// components
+import ThemeSwitch from "./ThemeSwitch.tsx";
+import LanguageSwitch from "./LanguageSwitch";
+
 export interface Props {
   className?: string;
 }
@@ -7,7 +11,8 @@ export interface Props {
 const Header = ({ className }: Props) => {
   return (
     <div className={clsx(className)}>
-      <span>Header</span>
+      <ThemeSwitch />
+      <LanguageSwitch />
     </div>
   );
 };

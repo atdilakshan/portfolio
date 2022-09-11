@@ -9,12 +9,14 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <Hero />
-      <Biography />
+      <div className="flex-1">
+        <Hero />
+        <Biography />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

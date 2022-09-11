@@ -10,7 +10,11 @@ export interface Props {
 
 const Header = ({ className }: Props) => {
   return (
-    <div className={clsx(className)}>
+    <div className={clsx(
+      className,
+      "w-10/12 m-auto p-4 bg-green-700",
+      "flex justify-between"
+      )}>
       <ThemeSwitch />
       <LanguageSwitch />
     </div>

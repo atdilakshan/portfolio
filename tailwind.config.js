@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        system: ['"Noto Sans"', '"Noto Sans Tamil"', 'sans-serif'],
-        accent: ['"Asap"', '"Noto Sans Tamil"', 'cursive'],
+        system: ['"Noto Sans"', '"Noto Sans Tamil"', "sans-serif"],
+        accent: ['"Asap"', '"Noto Sans Tamil"', "cursive"],
       },
     },
   },

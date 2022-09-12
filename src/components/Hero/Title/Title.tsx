@@ -11,9 +11,9 @@ const Title = ({ className }: Props) => {
     <h1
       className={clsx(
         className,
-        "flex justify-center",
+        "flex justify-center mx-auto",
         "font-accent font-bold",
-        "text-5xl md:text-5xl lg:text-6xl",
+        "text-5xl md:text-6xl lg:text-7xl",
         "-rotate-6 -translate-y-10 md:-translate-y-1 lg:-translate-y-10"
       )}
     >

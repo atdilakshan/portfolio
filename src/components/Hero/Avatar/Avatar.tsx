@@ -8,7 +8,7 @@ export interface Props {
 const Avatar = ({ className }: Props) => {
   return (
     <div
-      className={clsx("mx-auto flex justify-center w-48 lg:w-56", className)}
+      className={clsx(className, "mx-auto flex justify-center w-48 lg:w-56")}
     >
       <img src={profile} alt="AT Dilakshan" />
     </div>

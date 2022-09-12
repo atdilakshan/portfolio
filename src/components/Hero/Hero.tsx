@@ -14,7 +14,10 @@ const Hero = ({ className }: Props) => {
     <div className={clsx(className)}>
       <Avatar />
       <Title />
-      <ReactTyped
+      <ReactTyped className={clsx(className, 
+      "flex justify-center",
+      "text-2xl"
+      )}
         strings={["Developer", "Youtuber", ""]}
         typeSpeed={100}
         backSpeed={100}

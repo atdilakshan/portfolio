@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import ReactTyped from "react-typed";
 
 // components
 import Avatar from "./Avatar";
@@ -13,6 +14,12 @@ const Hero = ({ className }: Props) => {
     <div className={clsx(className)}>
       <Avatar />
       <Title />
+      <ReactTyped
+        strings={["Developer", "Youtuber", ""]}
+        typeSpeed={100}
+        backSpeed={100}
+        loop
+      />
     </div>
   );
 };

@@ -2,3 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,600&family=Noto+Sans+Tamil:wght@400;800&family=Noto+Sans:wght@400;800&display=swap');
+
+[data-theme='light'] {
+  --textColor: #333;
+  --titleColor: #333;
+  --bgColor: #fafafa;
+  --linkColor: #01a2d8;
+}
+
+[data-theme='dark'] {
+  --textColor: #eee;
+  --titleColor: #eee;
+  --bgColor: #333;
+  --linkColor: #01a2d8;
+}
+
+body {
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  min-height: 100vh;
+}
+
+a {
+  color: var(--linkColor);
+}
+
+h1 {
+  color: var(--titleColor);
+}
+
+footer {
+  background-color: var(--textColor);
+  color: var(--bgColor);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

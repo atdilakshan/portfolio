@@ -1,10 +1,12 @@
 import clsx from "clsx";
+import { useTranslation } from 'react-i18next'
 
 export interface Props {
-  className?: string;
+  className?: string
 }
 
 const Title = ({ className }: Props) => {
+  const { t } = useTranslation()
   return (
     <h1
       className={clsx(
@@ -15,7 +17,7 @@ const Title = ({ className }: Props) => {
         "-rotate-6 -translate-y-10 md:-translate-y-1 lg:-translate-y-10"
       )}
     >
-      AT Dilakshan
+      <span>{t('Hero.title1')}</span><span>{t('Hero.title2')}</span>
     </h1>
   );
 };

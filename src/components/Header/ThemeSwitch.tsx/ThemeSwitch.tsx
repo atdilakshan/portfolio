@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 import { ChangeEventHandler, useEffect, useState } from 'react'
+import styles from './ThemeSwitch.module.scss'
 
 export interface Props {
   className?: string
@@ -44,23 +45,22 @@ const ThemeSwitch = ({ className }: Props) => {
   return (
     <div
       className={clsx(
-        // styles.wrapper,
+        styles.wrapper,
         className,
         'flex flex-1 items-center gap-2'
       )}
     >
-      <span className='text-3xl'>🌞</span>
-      <label  htmlFor="switch" className='switch'>
+      <span className={styles.icon}>🌞</span>
+      <label className={styles.switch} htmlFor="switch">
         <input
           id="switch"
           type="checkbox"
           onChange={handleSwitch}
           checked={theme === 'dark'}
         />
-        <span className='slider round'></span>
-        <div />
+        <div className={styles.slider} />
       </label>
-      <span className='text-3xl'>🌒</span>
+      <span className={styles.icon}>🌒</span>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import './i18n'
+import "./i18n";
 import "./App.css";
 
 // components
@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen mx-auto">
       <Header />
       <div className="flex-1">
         <Hero />

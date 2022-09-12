@@ -13,7 +13,7 @@ const Title = ({ className }: Props) => {
         className,
         "flex justify-center",
         "font-accent font-bold",
-        "text-5xl md:text-6xl lg:text-7xl",
+        "text-5xl md:text-5xl lg:text-6xl",
         "-rotate-6 -translate-y-10 md:-translate-y-1 lg:-translate-y-10"
       )}
     >
